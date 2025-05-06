@@ -1,0 +1,3 @@
+streamlit>=1.35
+torch>=2.2           # or the version you trained with
+transformers>=4.40
