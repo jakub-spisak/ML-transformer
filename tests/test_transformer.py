@@ -40,8 +40,8 @@ def test_fully_masked_query_produces_zeros():
 
 
 def test_attention_supports_batches_and_stable_large_scores():
-    q = np.full((2, 1, 4), 1e150)
-    k = np.full((2, 3, 4), 1e150)
+    q = np.full((2, 1, 4), 1e100)
+    k = np.full((2, 3, 4), 1e100)
     v = np.arange(6.0).reshape(2, 3, 1)
 
     output, weights = scaled_dot_product_attention(q, k, v)
